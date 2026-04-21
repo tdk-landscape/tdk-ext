@@ -1,0 +1,32 @@
+/* ============================================================================
+   TOOLTIPS CSS - TDK UI Enhancements
+   Provides contextual tooltips for Tilt UI elements
+   ============================================================================ */
+
+.tilt-tooltip {
+  position: absolute;
+  background: #1a1a2e;
+  color: #e0e0e0;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  max-width: 300px;
+  z-index: 10000;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(4px);
+  transition: opacity 0.15s ease, transform 0.15s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  border: 1px solid #2d2d44;
+  line-height: 1.4;
+}
+
+.tilt-tooltip.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+[data-tilt-tooltip] {
+  cursor: help;
+}
