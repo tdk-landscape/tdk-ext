@@ -6,17 +6,27 @@
 #
 # Usage:
 #   v1alpha1.extension_repo(name='tdk-ext', url='https://github.com/tdk-landscape/tdk-ext')
-#   load('ext://tdk-ext', 'load_ui_enhancements', ...)
+#   load('ext://tdk-ext', 'get_ide_components_path', ...)
 # =============================================================================
 
-# UI Enhancements
-load('./ui-enhancements/tiltfile.py', _load_ui_enhancements='load_ui_enhancements')
-
 # =============================================================================
-# RE-EXPORTS
+# UI ENHANCEMENTS (simplified for repos-only)
 # =============================================================================
-
-load_ui_enhancements = _load_ui_enhancements
+def load_ui_enhancements(config):
+    """
+    Load UI enhancements configuration.
+    Simplified version for pure extension loading.
+    """
+    enable_tooltips = config.get('enable_tooltips', True)
+    enable_icons = config.get('enable_icons', True)
+    enable_help_panel = config.get('enable_help_panel', True)
+    enable_cron_jobs_tab = config.get('enable_cron_jobs_tab', True)
+    
+    print("✨ UI Enhancements configured")
+    print("   - Tooltips: " + ("enabled" if enable_tooltips else "disabled"))
+    print("   - Icons: " + ("enabled" if enable_icons else "disabled"))
+    print("   - Help Panel: " + ("enabled" if enable_help_panel else "disabled"))
+    print("   - Cron Jobs Tab: " + ("enabled" if enable_cron_jobs_tab else "disabled"))
 
 # =============================================================================
 # IDE COMPONENTS PATHS
