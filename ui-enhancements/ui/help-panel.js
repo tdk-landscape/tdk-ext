@@ -11,7 +11,7 @@
     gettingStarted: {
       title: 'Getting Started',
       content: `
-                <p>Welcome to Beauty CRM local development! This Tilt interface helps you manage all services.</p>
+                <p>Welcome to TDK Landscape local development! This Tilt interface helps you manage all services.</p>
                 <p><strong>Quick Start:</strong></p>
                 <ol>
                     <li>Wait for all services to show green (ready)</li>

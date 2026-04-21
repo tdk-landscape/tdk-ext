@@ -173,7 +173,7 @@ class CodeExecutorHandler(BaseHTTPRequestHandler):
                         </div>
                     </div>
                     <div class="terminal-content" id="terminal-output" style="white-space: pre-wrap; font-family: var(--font-mono);">
-                        <div class="text-muted">Beauty CRM Tilt IDE Terminal</div>
+                        <div class="text-muted">TDK Landscape Tilt IDE Terminal</div>
                         <div class="text-muted">Type a command and press Enter to execute</div>
                         <div class="text-muted">─────────────────────────────────────────</div>
                     </div>
